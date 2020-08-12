@@ -1,0 +1,127 @@
+/* 取消页面全局内外边距 */
+
+/* 设置全局大小 */
+body {
+	min-width: 1300px;
+	background: #FFFFFF;
+	font-family: Microsoft Yahei;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+blockquote,
+dd,
+dl,
+figure,
+form,
+p,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/*===== 统一设置列表的margin和padding，以及列表表形式 =====*/
+body,
+input,
+button,
+select,
+optgroup,
+option,
+textarea,
+pre {
+	font-family: 'Microsoft YaHei'
+}
+
+
+/* 设置文本超链接a */
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+/*===== 统一设置列表的margin和padding，以及列表表形式 =====*/
+menu,
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* input样式设置 */
+input,
+button {
+	outline: none;
+	height: 25px;
+}
+
+/* 统一文本输入框、下拉、文本框的背景色，避免被用户设置系统颜色而破坏页面色彩 */
+select {
+	border: 1px inset;
+}
+
+/* 统一下拉的边框 */
+textarea {
+	overflow: auto;
+	vertical-align: text-bottom;
+	*vertical-align: auto;
+	border: 1px solid;
+	resize: vertical;
+}
+
+/* 滚动条为auto，与周边的元素对齐方式，其中hack部分是IE6&7中vertical-align影响范围清除，resize为上下可拉动，避免左右拉动破坏页面布局，如有需要可以设置为none */
+/*===== 设置表格元素的样式 =====*/
+table {
+	border-spacing: 0;
+}
+
+/* 合并表格的间隙，去掉单元格之间的间距，如有需要合并单元格为细线表格，可增加 border-collapse:collapse; */
+td,
+th,
+caption {
+	padding: 0;
+}
+
+/*===== 去除个别浏览器图片底部的几个像素，以及设置图片形式链接无边框 =====*/
+
+a img {
+	border: 0 none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*===== 设置iframe的背景色以及去除个别浏览器iframe底部的几个像素 =====*/
+iframe {
+	background-color: #FFFFFF;
+	vertical-align: middle;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/* 外部字体  
+引用外部文件不能用中文的  
+引用字体文件需要引用至少三个后缀名.ttf .woff .eot 在不同浏览器中使用*/
+/* @font-face {
+	font-family: "ysbth";
+	src: url(../font/ysbth.ttf),
+		 url(../font/ysbth.woff),
+		 url(../font/ysbth.eot);
+	font-weight: normal;
+	font-style: normal;
+}
+ */
